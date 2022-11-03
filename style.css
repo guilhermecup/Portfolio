@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 13px;
+}
+
+a {
+    color: #837e9f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.card {
+    margin: 40px 40px 0;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #302f3d;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.aside {
+    margin-right: 20px;
+}
+
+.tech {
+    background-color: #CB92B1;
+    color: #000;
+    border-radius: 30px;
+    font-size: 10px;
+    list-style: none;
+}
+
+.portrait {
+    max-width: 128px;
+    border-radius: 50%;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "aside main main main"
+        "footer footer footer footer";
+    grid-template-columns: 348px auto;
+
+    background-color: #22212c;
+    
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #837e9f;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+aside .portrait {
+    border: 2px solid #0f0;
+}
+
+aside .user h2 {
+    margin: 30px 0 10px;
+    font-size: 23px;
+}
+
+aside .user p {
+    margin-bottom: 20px;
+}
+
+aside .follow-me a {
+    margin: 20px 0px;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+}
+
+aside .follow-me img {
+    margin: 0px 20px 0px 10px;
+}
+
+aside .techs h2 {
+    margin-bottom: 20px;
+}
+
+aside .techs ul {
+    display: flex;
+    gap: 15px;
+}
+
+aside .techs li {
+    width: 86px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside .curriculum h2 {
+    margin-bottom: 20px;
+}
+
+aside .curriculum ul {
+    display: flex;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+main {
+    grid-area: main;
+}
+
+main .section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .section-title a {
+    font-size: 14px;
+}
+
+main .projects {
+    margin: 40px 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+main .project {
+    margin: 0;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .project a span {
+    display: flex;
+}
+
+main .project a h3 {
+    margin-left: 16px;
+}
+
+main .project a p {
+    margin-top: 20px;
+}
+
+main .project > p {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+main .project > p span {
+    margin-left: 8px;
+    margin-right: 16px;
+}
+
+main .post {
+    display: flex;
+}
+
+main .post div {
+    margin-left: 20px;
+}
+
+main .post h3 {
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+main .post p {
+    font-size: 14px;
+}
+
+main .post .post-description {
+    margin-top: 28px;
+    font-size: 16px;
+}
+
+main .post div > p {
+    margin-top: 11px;
+    display: flex;
+    gap: 20px;
+}
+
+footer {
+    grid-area: footer;
+    margin: 60px 40px;
+}
